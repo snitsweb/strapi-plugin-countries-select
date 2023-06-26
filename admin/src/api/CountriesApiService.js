@@ -1,7 +1,7 @@
 import { request } from '@strapi/helper-plugin';
-import { id as pluginId } from '../../../plugin-meta';
+import { name } from '../../../plugin-meta';
 
-const findAll = async () => request(`/${pluginId}/countries`, {
+const findAll = async () => request(`/${name}/countries`, {
   method: 'GET',
 });
 

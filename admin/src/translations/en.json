@@ -1,1 +1,7 @@
-{}
+{
+  "plugin": {
+    "name": "Countries select"
+  },
+  "baseOptions": "Default options",
+  "Country": "Country"
+}

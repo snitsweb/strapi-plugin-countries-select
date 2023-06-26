@@ -1,20 +1,21 @@
 import { prefixPluginTranslations } from '@strapi/helper-plugin';
 import pluginMeta from '../../plugin-meta';
+import Icon from './components/Icon';
 
 export default {
   register(app) {
     app.customFields.register([
       {
         name: 'select',
-        pluginId: pluginMeta.id,
+        pluginId: pluginMeta.name,
         type: 'json',
-        icon: undefined,
+        icon: Icon,
         intlLabel: {
-          id: `${pluginMeta.id}.plugin.name`,
+          id: `${pluginMeta.name}.plugin.name`,
           defaultMessage: pluginMeta.name,
         },
         intlDescription: {
-          id: `${pluginMeta.id}.plugin.description`,
+          id: `${pluginMeta.name}.plugin.description`,
           defaultMessage: pluginMeta.description,
         },
         components: {
@@ -24,7 +25,7 @@ export default {
           base: [
             {
               sectionTitle: {
-                id: `${pluginMeta.id}.baseOptions`,
+                id: `${pluginMeta.name}.baseOptions`,
                 default: 'Base options',
               },
               items: [
@@ -56,7 +57,7 @@ export default {
         /* webpackChunkName: "translation-[request]" */ `./translations/${locale}.json`
       )
         .then(({ default: data }) => ({
-          data: prefixPluginTranslations(data, pluginMeta.id),
+          data: prefixPluginTranslations(data, pluginMeta.name),
           locale,
         }))
         .catch(() => ({
