@@ -1,0 +1,49 @@
+{
+  "name": "@snitsweb/strapi-plugin-countries-select",
+  "version": "1.0.0",
+  "description": "This is the description of the plugin.",
+  "strapi": {
+    "name": "countries-select",
+    "description": "Beautiful countries select",
+    "kind": "plugin",
+    "displayName": "Countries select"
+  },
+  "keywords": [
+    "strapi",
+    "countries",
+    "country"
+  ],
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^5.3.6",
+    "@strapi/strapi": "^4.0.0",
+    "@strapi/design-system": "^1.8.0",
+    "@strapi/helper-plugin": "^4.0.0",
+    "@strapi/icons": "^1.8.0",
+    "react-intl": "^6.4.1",
+    "prop-types": "^15.8.1",
+    "axios": "^1.4.0"
+  },
+  "author": {
+    "name": "Oleksandr Snitsaruk",
+    "email": "snitsweb.tech@gmail.com",
+    "url": "https://snitsweb.tech"
+  },
+  "maintainers": [
+    {
+      "name": "Oleksandr Snitsaruk",
+      "email": "snitsweb.tech@gmail.com",
+      "url": "https://snitsweb.tech"
+    }
+  ],
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
