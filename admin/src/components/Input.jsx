@@ -31,7 +31,9 @@ const Input = ({
   useEffect(() => {
     const setCountriesData = async () => {
       setIsLoading(true);
-      const response = await CountriesApiService.findAll();
+      const apiFields = attribute.options.apiFields ? JSON.parse(attribute.options.apiFields) : [];
+      console.log(apiFields);
+      const response = await CountriesApiService.findAll(apiFields);
 
       if (!response || !Array.isArray(response)) throw new Error('Oops, something went wrong when fetching countries');
 

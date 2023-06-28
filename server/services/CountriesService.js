@@ -8,8 +8,8 @@ class CountriesService {
     this.strapi = strapi;
   }
 
-  async findMany() {
-    const apiURL = this.strapi.plugin(pluginMeta.name).config('countriesApiURL');
+  async findMany({ apiFields = 'name, flag' }) {
+    const apiURL = `${this.strapi.plugin(pluginMeta.name).config('countriesApiURL')}?fields=${apiFields}`;
     const { data } = await axios.get(apiURL);
     if (!data) throw new Error('Something went wrong when fetching data from countries API');
     return data;

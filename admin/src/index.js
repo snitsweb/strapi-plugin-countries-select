@@ -38,7 +38,30 @@ export default {
                   },
                   description: {
                     id: 'form.attribute.item.requiredField.description',
-                    defaultMessage: "You won't be able to create an entry if this field is empty",
+                    defaultMessage: 'You won\'t be able to create an entry if this field is empty',
+                  },
+                },
+              ],
+            },
+          ],
+          advanced: [
+            {
+              sectionTitle: {
+                id: `${pluginMeta.name}.advancedOptions.title`,
+                default: 'Advanced options',
+              },
+              items: [
+                {
+                  name: 'options.apiFields',
+                  type: 'textarea',
+                  defaultValue: '["name", "flag"]',
+                  intlLabel: {
+                    id: `${pluginMeta.name}.advancedOptions.apiFields`,
+                    defaultMessage: 'Array of api fields to get from API',
+                  },
+                  description: {
+                    id: `${pluginMeta.name}.advancedOptions.apiFieldsDescription`,
+                    defaultMessage: 'Default value: [\'name\', \'flag\']',
                   },
                 },
               ],

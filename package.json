@@ -1,6 +1,6 @@
 {
   "name": "@snitsweb/strapi-plugin-countries-select",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "This is the description of the plugin.",
   "strapi": {
     "name": "countries-select",
