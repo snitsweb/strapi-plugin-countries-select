@@ -1,0 +1,8 @@
+.SingleInput {
+  width: 100%;
+}
+
+.p-component,
+.p-component > * {
+  font-size: 14px;
+}

@@ -1,7 +1,18 @@
 {
-  "plugin": {
-    "name": "Countries select"
-  },
-  "baseOptions": "Default options",
-  "Country": "Country"
+  "plugin.name": "Countries select",
+  "plugin.multiple-name": "Multiple countries select",
+  "plugin.description": "Beautiful countries select",
+  "plugin.multiple-description": "Beautiful multiple countries select",
+
+  "baseOptions.title": "Basic settings",
+  "advancedOptions.title": "Advanced settings",
+  "advancedOptions.apiFields": "Array of fields to be fetched from API",
+  "advancedOptions.apiFieldsDescription": "Default value: [\"name\", \"flag\"]. More fields: https://restcountries.com",
+
+  "country.singular": "Country",
+  "country.plural": "Countries",
+
+  "validation.required": "Required field",
+
+  "input.placeholder": "Not selected"
 }

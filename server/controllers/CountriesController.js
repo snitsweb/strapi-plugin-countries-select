@@ -9,7 +9,7 @@ class CountriesController {
 
   async findMany(ctx) {
     ctx.body = await this.strapi
-      .plugin(pluginMeta.name)
+      .plugin(pluginMeta.id)
       .service('CountriesService')
       .findMany(ctx.query)
       .catch((err) => ctx.throw(500, err));

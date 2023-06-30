@@ -1,5 +1,5 @@
 import { request } from '@strapi/helper-plugin';
-import { name } from '../../../plugin-meta';
+import { id } from '../../../plugin-meta';
 
 const findAll = async (apiFields = []) => {
   const validateIfExist = (field = '') => {
@@ -9,7 +9,7 @@ const findAll = async (apiFields = []) => {
   validateIfExist('name');
   validateIfExist('flag');
 
-  return request(`/${name}/countries?apiFields=${apiFields}`, {
+  return request(`/${id}/countries?apiFields=${apiFields}`, {
     method: 'GET',
   });
 };
