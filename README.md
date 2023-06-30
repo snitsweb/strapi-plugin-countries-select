@@ -8,6 +8,8 @@ Simple Strapi 4 plugin with custom fields for countries and additional informati
 ### Multi country input preview
 ![Plugin preview](docs/multi-input-preview.png)
 
+#### This plugin also support dark and light theme modes.
+
 ## Installation
 
 To install the Strapi Advanced UUID Plugin, simply run one of the following command:

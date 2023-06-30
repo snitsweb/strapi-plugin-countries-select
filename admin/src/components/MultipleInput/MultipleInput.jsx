@@ -1,12 +1,10 @@
 import { MultiSelect } from 'primereact/multiselect';
-import 'primereact/resources/primereact.min.css';
-import 'primereact/resources/themes/vela-blue/theme.css';
+import React, { useEffect, useState } from 'react';
 import './style.css';
-
 import PropTypes from 'prop-types';
 import { Typography, Box } from '@strapi/design-system';
-import React, { useEffect, useState } from 'react';
 import { useIntl } from 'react-intl';
+import { PrimereactThemeProvider } from '@snitsweb/strapi-plugin-helper';
 import { CountriesApiService } from '../../api/CountriesApiService';
 import getTrad from '../../utils/getTrad';
 import { sortCountries } from '../../utils/sortString';
@@ -66,7 +64,7 @@ const MultipleInput = ({
   };
 
   return (
-    <>
+    <PrimereactThemeProvider>
       <Box paddingBottom={ 1 }>
         <Typography
           variant="pi"
@@ -92,17 +90,17 @@ const MultipleInput = ({
         showClear
       />
       {isInvalid && (
-        <Box paddingTop={ 1 }>
-          <Typography
-            variant="pi"
-            textColor="danger700"
-            fontWeight="bold"
-          >
-            {requiredMessage}
-          </Typography>
-        </Box>
+      <Box paddingTop={ 1 }>
+        <Typography
+          variant="pi"
+          textColor="danger700"
+          fontWeight="bold"
+        >
+          {requiredMessage}
+        </Typography>
+      </Box>
       )}
-    </>
+    </PrimereactThemeProvider>
   );
 };
 

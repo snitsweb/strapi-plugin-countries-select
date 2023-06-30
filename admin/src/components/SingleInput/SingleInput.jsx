@@ -1,3 +1,4 @@
+import { PrimereactThemeProvider } from '@snitsweb/strapi-plugin-helper';
 import { Dropdown } from 'primereact/dropdown';
 import 'primereact/resources/primereact.min.css';
 import 'primereact/resources/themes/vela-blue/theme.css';
@@ -66,7 +67,7 @@ const SingleInput = ({
   };
 
   return (
-    <>
+    <PrimereactThemeProvider>
       <Box paddingBottom={ 1 }>
         <Typography
           variant="pi"
@@ -102,7 +103,7 @@ const SingleInput = ({
           </Typography>
         </Box>
       )}
-    </>
+    </PrimereactThemeProvider>
   );
 };
 
