@@ -2,7 +2,11 @@
 
 Simple Strapi 4 plugin with custom fields for countries and additional information
 
+### Single country input preview
 ![Plugin preview](docs/input-preview.png)
+
+### Multi country input preview
+![Plugin preview](docs/multi-input-preview.png)
 
 ## Installation
 
