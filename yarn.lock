@@ -9,10 +9,10 @@
   dependencies:
     regenerator-runtime "^0.13.11"
 
-"@snitsweb/strapi-plugin-helper@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@snitsweb/strapi-plugin-helper/-/strapi-plugin-helper-1.0.1.tgz#b7f6e404a8eee20a6ca88c414c13824e9913b0b8"
-  integrity sha512-gtga/O9nSQjRJXv2Dd8HTf2cBgms8QqeFwo6DEvvn3+iXnIxd/VFeOreqW8Y6t21VKZC6tDeuGQgosvpTS+WTg==
+"@snitsweb/strapi-plugin-helper@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@snitsweb/strapi-plugin-helper/-/strapi-plugin-helper-1.0.7.tgz#b725d36852eed0936440e357b2381e1aa6b08a32"
+  integrity sha512-Hi+0J+jtDB0NWptj2uNRfJIdxFb27/sXBceORJ/XKFo960I2bz0S19oWVJb2hfQ0IhkgfBRN2skor+4ogILclg==
 
 "@types/prop-types@*":
   version "15.7.5"

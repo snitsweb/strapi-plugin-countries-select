@@ -4,7 +4,7 @@ import './style.css';
 import PropTypes from 'prop-types';
 import { Typography, Box } from '@strapi/design-system';
 import { useIntl } from 'react-intl';
-import { PrimereactThemeProvider } from '@snitsweb/strapi-plugin-helper';
+import { PrimereactThemeProvider } from '@snitsweb/strapi-plugin-helper/dist/components';
 import { CountriesApiService } from '../../api/CountriesApiService';
 import getTrad from '../../utils/getTrad';
 import { sortCountries } from '../../utils/sortString';
