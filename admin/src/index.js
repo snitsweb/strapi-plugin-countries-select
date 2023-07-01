@@ -55,14 +55,13 @@ export default {
                 {
                   name: 'options.apiFields',
                   type: 'textarea',
-                  defaultValue: '["name", "flag"]',
                   intlLabel: {
                     id: getTrad('advancedOptions.apiFields'),
                     defaultMessage: 'Array of api fields to get from API',
                   },
                   description: {
                     id: getTrad('advancedOptions.apiFieldsDescription'),
-                    defaultMessage: 'Default value: ["name", "flag"]. More fields you can find here there: https://restcountries.com',
+                    defaultMessage: 'Default value: []. More fields you can find here there: https://restcountries.com. Note: fields "flag" and "name" will be always get from API.',
                   },
                 },
               ],
@@ -121,14 +120,13 @@ export default {
                 {
                   name: 'options.apiFields',
                   type: 'textarea',
-                  defaultValue: '["name", "flag"]',
                   intlLabel: {
                     id: getTrad('advancedOptions.apiFields'),
                     defaultMessage: 'Array of api fields to get from API',
                   },
                   description: {
                     id: getTrad('advancedOptions.apiFieldsDescription'),
-                    defaultMessage: 'Default value: ["name", "flag"]. Find more fields: https://restcountries.com',
+                    defaultMessage: 'Default value: []. More fields you can find here there: https://restcountries.com. Note: fields "flag" and "name" will be always get from API.',
                   },
                 },
               ],

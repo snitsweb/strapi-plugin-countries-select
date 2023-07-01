@@ -7,7 +7,7 @@
   "baseOptions.title": "Basic settings",
   "advancedOptions.title": "Advanced settings",
   "advancedOptions.apiFields": "Array of fields to be fetched from API",
-  "advancedOptions.apiFieldsDescription": "Default value: [\"name\", \"flag\"]. More fields: https://restcountries.com",
+  "advancedOptions.apiFieldsDescription": "Default value: []. More fields you can find here there: https://restcountries.com. Note: fields \"flag\" and \"name\" will be always get from API.",
 
   "country.singular": "Country",
   "country.plural": "Countries",

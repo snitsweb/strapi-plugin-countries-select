@@ -33,7 +33,7 @@ const MultipleInput = ({
 
   useEffect(() => {
     const setCountriesData = async () => {
-      const apiFields = attribute.options.apiFields ? JSON.parse(attribute.options.apiFields) : [];
+      const apiFields = attribute.options?.apiFields ? JSON.parse(attribute.options.apiFields) : [];
       const response = await CountriesApiService.findAll(apiFields);
 
       if (!response || !Array.isArray(response)) throw new Error('Oops, something went wrong when fetching countries');

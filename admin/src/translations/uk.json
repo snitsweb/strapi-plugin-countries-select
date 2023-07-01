@@ -8,7 +8,7 @@
   "baseOptions.title": "Базові налаштування",
   "advancedOptions.title": "Розширені налаштування",
   "advancedOptions.apiFields": "Масив полів які будуть взяті з API",
-  "advancedOptions.apiFieldsDescription": "Вартість за замовчуванням: [\"name\", \"flag\"]. Більше полів: https://restcountries.com",
+  "advancedOptions.apiFieldsDescription": "Вартість за замовчуванням: []. Більше полів: https://restcountries.com. Увага: поля \"name\", \"flag\" будуть завжди запитуватись у API.",
 
   "country.singular": "Країна",
   "country.plural": "Країни",
