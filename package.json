@@ -22,7 +22,7 @@
     "country"
   ],
   "dependencies": {
-    "@snitsweb/strapi-plugin-helper": "^1.1.0",
+    "@snitsweb/strapi-plugin-helper": "^1.2.0",
     "lodash-es": "^4.17.21",
     "primereact": "^9.6.0"
   },
